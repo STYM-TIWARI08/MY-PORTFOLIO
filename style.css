@@ -67,6 +67,17 @@ img { max-width: 100%; display: block; }
   position: var(--bg); /* ❌ same issue as above */
 }
 
+.nav-bar {
+  max-width: 980 px;
+  margin: 0 auto;
+  padding: .65rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  position:var(--bg);
+
+}
 
 .brand {
   font-family: var(--font-display);

@@ -56,25 +56,17 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============ HEADER / NAV ============ */
+/* BROKEN — position doesn't accept a color variable */
 .site-header {
-  position: var(--bg);
-  top: 0;
-  z-index: 100;
-  background: var(--bg);
-  border-bottom: 1 px solid color white;
+  position: var(--bg);   /* ❌ invalid, header loses its sticky behavior */
+  border-bottom: 1 px solid color white;  /* ❌ "1 px" has a space, "color white" isn't valid */
 }
 
 .nav-bar {
-  max-width: 980 px;
-  margin: 0 auto;
-  padding: .65rem 1.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-  position:var(--bg);
-
+  max-width: 980 px;   /* ❌ space between 980 and px breaks it */
+  position: var(--bg); /* ❌ same issue as above */
 }
+
 
 .brand {
   font-family: var(--font-display);
@@ -385,4 +377,12 @@ img { max-width: 100%; display: block; }
 .site-footer a {
     color: #082857;
     text-decoration: none;
+}
+@media (max-width: 480px) {
+  .nav-bar {
+    padding: 1rem;
+  }
+  .brand {
+    font-size: 1.1rem;
+  }
 }

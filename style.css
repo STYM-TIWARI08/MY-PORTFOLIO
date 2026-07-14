@@ -56,15 +56,12 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============ HEADER / NAV ============ */
-/* BROKEN — position doesn't accept a color variable */
 .site-header {
-  position: var(--bg);   /* ❌ invalid, header loses its sticky behavior */
-  border-bottom: 1 px solid color white;  /* ❌ "1 px" has a space, "color white" isn't valid */
-}
-
-.nav-bar {
-  max-width: 980 px;   /* ❌ space between 980 and px breaks it */
-  position: var(--bg); /* ❌ same issue as above */
+  position: var(--bg);
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  
 }
 
 .nav-bar {
@@ -251,7 +248,10 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============ ABOUT PAGE ============ */
-.about-body p { margin: 0 0 1.1rem; color: var(--text); max-width: 68ch; }
+.about-body pre { margin:0 0 1.1rem; 
+  color: var(--text);
+   max-width: 68ch; 
+   dtdctext-align: justify;}
 
 .timeline { border-left: 2px solid var(--border); padding-left: 1.5rem; }
 .timeline-item { margin-bottom: 1.5rem; position: relative; }
@@ -389,11 +389,4 @@ img { max-width: 100%; display: block; }
     color: #082857;
     text-decoration: none;
 }
-@media (max-width: 480px) {
-  .nav-bar {
-    padding: 1rem;
-  }
-  .brand {
-    font-size: 1.1rem;
-  }
-}
+

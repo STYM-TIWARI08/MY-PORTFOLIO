@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-bar">
+    <a href="index.html" class="brand">Satyam Tiwari</a>
+    <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="slideMenu">
+      Menu <span class="menu-icon"></span>
+    </button>
+  </div>
+  <nav id="slideMenu" class="slide-menu">
+    <div class="slide-menu-inner">
+      <a href="index.html">Home <span class="arrow">→</span></a>
+      <a href="about.html">About <span class="arrow">→</span></a>
+      <a href="resume.html">Resume <span class="arrow">→</span></a>
+      <a href="projects.html">Projects <span class="arrow">→</span></a>
+      <a href="blog.html">Blog <span class="arrow">→</span></a>
+      <a href="contact.html">Contact <span class="arrow">→</span></a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+
+  <div class="page-header">
+    <p class="eyebrow">Projects</p>
+    <h1>Things I've built</h1>
+    <p>EDIT: a one-line summary of the kind of work shown below.</p>
+  </div>
+
+  <section class="section">
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <h3>EDIT: Project Name One</h3>
+        <p>EDIT: One or two sentences on what this project does and what problem it solves.</p>
+        <a href="#">View project →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>EDIT: Project Name Two</h3>
+        <p>EDIT: One or two sentences on what this project does and what problem it solves.</p>
+        <a href="#">View project →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>EDIT: Project Name Three</h3>
+        <p>EDIT: One or two sentences on what this project does and what problem it solves.</p>
+        <a href="#">View project →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>EDIT: Project Name Four</h3>
+        <p>EDIT: One or two sentences on what this project does and what problem it solves.</p>
+        <a href="#">View project →</a>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer container">
+  <span>&copy; <span id="year"></span> Your Name</span>
+  <span>EDIT: your email or social links</span>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

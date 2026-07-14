@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="nav-bar">
+      <a href="index.html" class="brand">Satyam Tiwari</a>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="slideMenu">
+        Menu <span class="menu-icon"></span>
+      </button>
+    </div>
+    <nav id="slideMenu" class="slide-menu">
+      <div class="slide-menu-inner">
+        <a href="index.html">Home <span class="arrow">→</span></a>
+        <a href="about.html">About <span class="arrow">→</span></a>
+        <a href="resume.html">Resume <span class="arrow">→</span></a>
+        <a href="projects.html">Projects <span class="arrow">→</span></a>
+        <a href="blog.html">Blog <span class="arrow">→</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <div class="page-header">
+      <p class="eyebrow">About</p>
+      <h1>A bit more about me</h1>
+      <p>Building robust systems through code, collaboration, and continuous learning</p>
+    </div>
+
+    <section class="section about-body">
+      <pre>
+        My journey into engineering started in my 10th grade when I first discovered how developers create websites,
+        games, and software applications. Seeing how code could transform ideas into real-world solutions sparked my
+        curiosity and motivated me to explore programming. This interest led me to choose Computer Science in 11th
+        grade, where I started learning Python, building small programs, and understanding how technology can be used to
+        solve practical problems.
+
+        Currently, I am a third-year engineering student exploring Machine Learning and Web Development. Through my
+        learning journey, I have developed skills in programming, problem-solving, and critical thinking, along with the
+        ability to approach challenges with a structured mindset.
+
+        Engineering continues to inspire my curiosity every day, encouraging me to learn new technologies, experiment
+        with ideas, and build solutions that create meaningful impact.
+
+      </pre>
+      <pre>
+        I am currently looking for opportunities where I can apply my technical skills, contribute to meaningful
+        projects, and continue learning from experienced teams. I am open to internships, collaborations, and roles that
+        allow me to grow as an engineer while solving real-world problems through technology.
+
+        What makes my journey unique is my curiosity-driven approach to learning. From writing my first programs in
+        Python to exploring Machine Learning and Web Development, I have always focused on understanding how technology
+        can be used to create practical solutions and improve the way we solve problems.
+
+      </pre>
+    </section>
+    <!-- 
+    <section class="section">
+      <h2>Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="date">EDIT: 2024 — Present</span>
+          <h3>EDIT: Current role or focus</h3>
+          <p>EDIT: One line describing what you do here.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">EDIT: 2022 — 2024</span>
+          <h3>EDIT: Previous role, project, or study</h3>
+          <p>EDIT: One line describing what you did here.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">EDIT: Earlier</span>
+          <h3>EDIT: Where you started</h3>
+          <p>EDIT: One line describing the beginning of your path.</p>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="section">
+      <h2>Interests outside of work</h2>
+      <div class="pills">
+        <span class="pill">Reading</span>
+        <span class="pill">Online games</span>
+        <span class="pill">Music</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container">
+    <span>&copy; <span id="year"></span>Satyam Tiwari</span>
+    <span>
+      <a href="mailto:st2701846@gmail.com">st2701846@gmail.com</a>
+    </span>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>

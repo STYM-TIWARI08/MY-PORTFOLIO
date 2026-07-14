@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-bar">
+    <a href="index.html" class="brand">Satyam Tiwari</a>
+    <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="slideMenu">
+      Menu <span class="menu-icon"></span>
+    </button>
+  </div>
+  <nav id="slideMenu" class="slide-menu">
+    <div class="slide-menu-inner">
+      <a href="index.html">Home <span class="arrow">→</span></a>
+      <a href="about.html">About <span class="arrow">→</span></a>
+      <a href="resume.html">Resume <span class="arrow">→</span></a>
+      <a href="projects.html">Projects <span class="arrow">→</span></a>
+      <a href="blog.html">Blog <span class="arrow">→</span></a>
+      <a href="contact.html">Contact <span class="arrow">→</span></a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+
+  <div class="page-header">
+    <p class="eyebrow">Resume</p>
+    <h1>Experience &amp; education</h1>
+    <p>Front-End Developer passionate about creating responsive and user-friendly websites.</p>
+  </div>
+
+  <section class="section">
+    <div class="resume-download">
+      <p>Want a copy to keep? EDIT: link this button to a real PDF export of your resume.</p>
+      <a href="Satyam_Tiwari_Resume.pdf" class="btn btn-primary" download>Download PDF</a>
+    </div>
+
+    <div class="resume-block">
+      <h2>Experience</h2>
+      <div class="resume-entry">
+        <div class="resume-entry-head">
+          <h3></h3>
+          <span></span>
+        </div>
+        <p></p>
+      </div>
+      <div class="resume-entry">
+        <div class="resume-entry-head">
+          <h3></h3>
+          <span></span>
+        </div>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="resume-block">
+      <h2>Education</h2>
+      <div class="resume-entry">
+        <div class="resume-entry-head">
+          <h3>Pursuing B.Tech(hons.)CSE with specialization in [AI/ML]  — SDGI GLOBAL UNIVERSITY</h3>
+          <span>2024 — Present</span>
+        </div>
+        <p>Relevant focus areas: Web Development, Machine Learning</p>
+      </div>
+    </div>
+
+    <div class="resume-block">
+      <h2>Skills</h2>
+      <div class="pills">
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">Python</span>
+        <span class="pill">Java</span>
+        <span class="pill">c++</span>
+        <span class="pill">Machine Learning</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer container">
+  <span>&copy; <span id="year"></span> Satyam Tiwari</span>
+  <span>
+    <a href="mailto:st2701846@gmail.com">st2701846@gmail.com</a>
+  </span>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

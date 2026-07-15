@@ -257,6 +257,7 @@ img { max-width: 100%; display: block; }
   line-height: 1.7;
   max-width: 100%;
   margin: 0 0 1.1rem;
+  text-align: justify;
 }
 
 @media (max-width: 640px) {

@@ -251,7 +251,7 @@ img { max-width: 100%; display: block; }
 .about-body pre {
   white-space: pre-wrap;       /* wrap long lines instead of overflowing */
   word-wrap: normal;      /* break long words if needed */
-  overflow-wrap: break-word;
+ 
   font-family: var(--font-body);  /* optional: switch off monospace on mobile */
   font-size: 1rem;
   line-height: 1.7;

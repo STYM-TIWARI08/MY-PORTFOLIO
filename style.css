@@ -11,12 +11,12 @@
    ========================================================== */
 
 :root {
-  --bg: #5353538e;
+  --bg: #0114248e;
   --surface: #49444466;
   --border: #655d5d;
   --text: #f9f9f9ae;
   --muted: #5C6270;
-  --accent: #082857;
+  --accent: #083757;
   --accent-2: #7e7c7c;
   --font-display: 'Fraunces', serif;
   --font-body: 'Inter', sans-serif;
@@ -248,10 +248,24 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============ ABOUT PAGE ============ */
-.about-body pre { margin:0 0 1.1rem; 
-  color: var(--text);
-   max-width: 68ch; 
-   dtdctext-align: justify;}
+.about-body pre {
+  white-space: inherit;       /* wrap long lines instead of overflowing */
+  word-wrap: normal;      /* break long words if needed */
+ 
+  font-family: var(--font-body);  /* optional: switch off monospace on mobile */
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 100%;
+  margin: 0 0 1.1rem;
+  text-align: justify;
+}
+
+@media (max-width: 640px) {
+  .about-body pre {
+    font-size: 0.9rem;
+    padding: 0 0.25rem;
+  }
+}
 
 .timeline { border-left: 2px solid var(--border); padding-left: 1.5rem; }
 .timeline-item { margin-bottom: 1.5rem; position: relative; }

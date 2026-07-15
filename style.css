@@ -249,7 +249,7 @@ img { max-width: 100%; display: block; }
 
 /* ============ ABOUT PAGE ============ */
 .about-body pre {
-      /* wrap long lines instead of overflowing */
+  white-space: pre-wrap;       /* wrap long lines instead of overflowing */
   word-wrap: normal;      /* break long words if needed */
  
   font-family: var(--font-body);  /* optional: switch off monospace on mobile */
